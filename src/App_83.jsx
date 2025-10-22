@@ -1,17 +1,19 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
 import {
   HomeLayoutPage_83,
   HomePage_83,
   BlogStaticPage_83,
   BlogLocalJsonPage_83,
   BlogNodePage_83,
+  ErrorPage_83, 
+  BookListPage_83,
 } from "./pages";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <HomeLayoutPage_83 />,
+    errorElement: <ErrorPage_83 />, // 加入這行
     children: [
       {
         index: true,
@@ -26,9 +28,12 @@ const router = createBrowserRouter([
         element: <BlogLocalJsonPage_83 />,
       },
       {
-         path: "node_83",
+        path: "node_83",
         element: <BlogNodePage_83 />,
-      
+      },
+         {
+        path: "booklist_83",
+        element: <BookListPage_83 />,
       },
     ],
   },

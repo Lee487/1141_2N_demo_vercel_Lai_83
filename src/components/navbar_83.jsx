@@ -14,7 +14,7 @@ const Navbar_83 = () => {
         </div>
         <div className="header-right">
           <ul className="main-menu">
-            <li className="menu-item"><Link to="#" className="active">Home</Link></li>
+            <li className="menu-item"><Link to="/" className="active">Home</Link></li>
 
             <li className="menu-item mega-menu">
               <Link to="#">Mega menu +</Link>
@@ -66,6 +66,7 @@ const Navbar_83 = () => {
               <Link to="#">Demo+</Link>
               <div className="sub-menu-wrapper slideInUp">
                 <ul className="sub-menu">
+                   <li className="menu-item"><Link to="/booklist_83">W2_BookList_83</Link></li>
                   <li className="menu-item"><Link to="/static_83">W3_BlogStatic_83</Link></li>
                   <li className="menu-item"><Link to="/localjson_83">W3_BlogLocalJson_83</Link></li>
                   <li className="menu-item"><Link to="node_83">W4_BlogNode_83</Link></li>
